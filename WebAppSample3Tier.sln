@@ -7,6 +7,11 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebAppSample3Tier", "WebApp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebAppSample3Tier.Tests", "WebAppSample3Tier.Tests\WebAppSample3Tier.Tests.csproj", "{89C302ED-44F4-40BC-9C4D-A670ED607127}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SQL Files", "SQL Files", "{5DA0FF78-F9E1-4795-9394-C54EC3222744}"
+	ProjectSection(SolutionItems) = preProject
+		01-CreateTables-SqlQuery.sql = 01-CreateTables-SqlQuery.sql
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
