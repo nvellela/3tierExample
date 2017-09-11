@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebAppSample3Tier", "WebAppSample3Tier\WebAppSample3Tier.csproj", "{2D7914EF-2778-497A-A804-F506D7EA1E32}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01WebAppSample3Tier", "WebAppSample3Tier\01WebAppSample3Tier.csproj", "{2D7914EF-2778-497A-A804-F506D7EA1E32}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebAppSample3Tier.Tests", "WebAppSample3Tier.Tests\WebAppSample3Tier.Tests.csproj", "{89C302ED-44F4-40BC-9C4D-A670ED607127}"
 EndProject
@@ -11,6 +11,12 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SQL Files", "SQL Files", "{
 	ProjectSection(SolutionItems) = preProject
 		01-CreateTables-SqlQuery.sql = 01-CreateTables-SqlQuery.sql
 	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03DataAccessLayer", "DataAccessLayer\03DataAccessLayer.csproj", "{61B85608-715B-4BA1-83FB-9404125363D0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02BusinessLogicLayer", "BusinessLogicLayer\02BusinessLogicLayer.csproj", "{44961F30-E3A6-4DDB-A8EE-8835B6CFD899}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04CommonLayer", "CommonLayer\04CommonLayer.csproj", "{175DEDD6-8EDE-4203-8B09-DABE0B2A70B8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -26,6 +32,18 @@ Global
 		{89C302ED-44F4-40BC-9C4D-A670ED607127}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{89C302ED-44F4-40BC-9C4D-A670ED607127}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{89C302ED-44F4-40BC-9C4D-A670ED607127}.Release|Any CPU.Build.0 = Release|Any CPU
+		{61B85608-715B-4BA1-83FB-9404125363D0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{61B85608-715B-4BA1-83FB-9404125363D0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{61B85608-715B-4BA1-83FB-9404125363D0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{61B85608-715B-4BA1-83FB-9404125363D0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{44961F30-E3A6-4DDB-A8EE-8835B6CFD899}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{44961F30-E3A6-4DDB-A8EE-8835B6CFD899}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{44961F30-E3A6-4DDB-A8EE-8835B6CFD899}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{44961F30-E3A6-4DDB-A8EE-8835B6CFD899}.Release|Any CPU.Build.0 = Release|Any CPU
+		{175DEDD6-8EDE-4203-8B09-DABE0B2A70B8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{175DEDD6-8EDE-4203-8B09-DABE0B2A70B8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{175DEDD6-8EDE-4203-8B09-DABE0B2A70B8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{175DEDD6-8EDE-4203-8B09-DABE0B2A70B8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

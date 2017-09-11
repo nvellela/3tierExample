@@ -92,9 +92,9 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\WebAppSample3Tier\WebAppSample3Tier.csproj">
+    <ProjectReference Include="..\WebAppSample3Tier\01WebAppSample3Tier.csproj">
       <Project>{2D7914EF-2778-497A-A804-F506D7EA1E32}</Project>
-      <Name>WebAppSample3Tier</Name>
+      <Name>01WebAppSample3Tier</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
