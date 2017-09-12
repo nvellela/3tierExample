@@ -12,9 +12,11 @@ namespace WebApplication3Layers1ProjectExample.Application.DataAccessLayer.DataC
     using System;
     using System.Collections.Generic;
     
-    public partial class Person
+    public partial class Employee
     {
         public int Id { get; set; }
-        public string Firstname { get; set; }
+        public string Name { get; set; }
+        public int Salary { get; set; }
+        public bool IsRetired { get; set; }
     }
 }

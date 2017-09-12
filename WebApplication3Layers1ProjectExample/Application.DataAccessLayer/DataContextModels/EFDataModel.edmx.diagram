@@ -7,8 +7,8 @@
       <Diagram DiagramId="f47c7f73598f40d6988d753232aac13f" Name="Diagram1">
         <EntityTypeShape EntityType="testDBModel.Category" Width="1.5" PointX="0.75" PointY="1.125" IsExpanded="true" />
         <EntityTypeShape EntityType="testDBModel.Movie" Width="1.5" PointX="3" PointY="0.875" IsExpanded="true" />
-        <EntityTypeShape EntityType="testDBModel.Person" Width="1.5" PointX="0.75" PointY="4.75" IsExpanded="true" />
         <AssociationConnector Association="testDBModel.FK_Movie_Category_CategoryId" ManuallyRouted="false" />
+        <EntityTypeShape EntityType="testDBModel.Employee" Width="1.5" PointX="0.75" PointY="4.75" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>

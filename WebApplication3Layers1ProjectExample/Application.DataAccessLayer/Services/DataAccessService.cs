@@ -78,6 +78,40 @@ namespace WebApplication3Layers1ProjectExample.Application.DataAccessLayer.Servi
             context.Categories.Add(efModel);
             context.SaveChanges();
         }
+
+        public List<EmployeeModel> FetchAllEmployee()
+        {
+            var efModel = context.Employees.ToList();
+            var returnObject = new List<EmployeeModel>();
+
+            foreach (var item in efModel)
+            {
+                returnObject.Add(new EmployeeModel()
+                {
+                    Id = item.Id,
+                    Name = item.Name,
+                    Salary = item.Salary,
+                    IsRetired = item.IsRetired
+                });
+            }
+
+            return returnObject;
+        }
+
+        public void DeleteEmployee(long id)
+        {
+            throw new NotImplementedException();
+        }
+
+        public void UpdateEmployee(EmployeeModel model)
+        {
+            throw new NotImplementedException();
+        }
+
+        public void AddEmployee(EmployeeModel model)
+        {
+            throw new NotImplementedException();
+        }
     }
 
   

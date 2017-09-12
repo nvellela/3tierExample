@@ -1,0 +1,59 @@
+﻿@model IEnumerable<WebApplication3Layers1ProjectExample.Models.EmployeeViewModel>
+
+@{
+    ViewBag.Title = "EmployeeList";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>EmployeeList</h2>
+
+<p>
+    @Html.ActionLink("Create New", "AddEmployee")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Name)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Salary)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.IsRetired)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.SalarySuper)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.SalaryColor)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Name)
+        </td>
+        <td>
+            <span style="background-color:@item.SalaryColor">@item.Salary</span>  
+            
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.IsRetired)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.SalarySuper)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.SalaryColor)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.Id }) |
+            @Html.ActionLink("Details", "Details", new { id=item.Id }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.Id })
+        </td>
+    </tr>
+}
+
+</table>

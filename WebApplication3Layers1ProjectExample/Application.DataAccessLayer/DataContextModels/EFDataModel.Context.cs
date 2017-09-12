@@ -27,6 +27,6 @@ namespace WebApplication3Layers1ProjectExample.Application.DataAccessLayer.DataC
     
         public virtual DbSet<Category> Categories { get; set; }
         public virtual DbSet<Movie> Movies { get; set; }
-        public virtual DbSet<Person> People { get; set; }
+        public virtual DbSet<Employee> Employees { get; set; }
     }
 }

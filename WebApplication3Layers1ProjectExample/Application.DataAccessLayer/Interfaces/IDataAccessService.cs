@@ -14,6 +14,11 @@ namespace WebApplication3Layers1ProjectExample.Application.DataAccessLayer.Inter
         void AddCategory(CategoryModel model);
 
 
+        List<EmployeeModel> FetchAllEmployee();
+        void DeleteEmployee(long id);
+        void UpdateEmployee(EmployeeModel model);
+        void AddEmployee(EmployeeModel model);
+
 
         //CategoryModel FetchCategory(long id);
         //CategoryModel FetchCategory(string codeValue);

@@ -20,3 +20,11 @@ CONSTRAINT [PK_Movie] PRIMARY KEY CLUSTERED ([MovieId] ASC),
 CONSTRAINT [UK_Movie_MovieName] UNIQUE NONCLUSTERED ([MovieName] ASC),
 CONSTRAINT [FK_Movie_Category_CategoryId] FOREIGN KEY ([CategoryId]) REFERENCES [Category] (CategoryId)
 )
+
+CREATE TABLE [dbo].[Employee](
+	[Id] [int] IDENTITY(1,1) NOT NULL,
+	[Name] [nvarchar](500) NULL,
+	[Salary] [int] NOT NULL,
+	[IsRetired] [bit] NOT NULL default(0),
+	CONSTRAINT [PK_Person] PRIMARY KEY CLUSTERED (	[Id] ASC)
+ )

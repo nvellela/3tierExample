@@ -165,8 +165,11 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Application.BusinessLogicLayer\Interfaces\IEmployeeService.cs" />
     <Compile Include="Application.BusinessLogicLayer\Models\CategoryModel.cs" />
     <Compile Include="Application.BusinessLogicLayer\Interfaces\ICategoryService.cs" />
+    <Compile Include="Application.BusinessLogicLayer\Models\EmployeeModel.cs" />
+    <Compile Include="Application.BusinessLogicLayer\Services\EmployeeService.cs" />
     <Compile Include="Application.BusinessLogicLayer\Services\CategoryService.cs" />
     <Compile Include="Application.DataAccessLayer\DataContextModels\Category.cs">
       <DependentUpon>EFDataModel.tt</DependentUpon>
@@ -186,10 +189,10 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>EFDataModel.edmx</DependentUpon>
     </Compile>
-    <Compile Include="Application.DataAccessLayer\DataContextModels\Movie.cs">
+    <Compile Include="Application.DataAccessLayer\DataContextModels\Employee.cs">
       <DependentUpon>EFDataModel.tt</DependentUpon>
     </Compile>
-    <Compile Include="Application.DataAccessLayer\DataContextModels\Person.cs">
+    <Compile Include="Application.DataAccessLayer\DataContextModels\Movie.cs">
       <DependentUpon>EFDataModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Application.DataAccessLayer\Interfaces\IDataAccessService.cs" />
@@ -203,6 +206,7 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\EmployeeViewModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -268,10 +272,11 @@
     <Content Include="Views\Categories\Details.cshtml" />
     <Content Include="Views\Categories\Edit.cshtml" />
     <Content Include="Views\Categories\Index.cshtml" />
+    <Content Include="Views\Home\EmployeeList.cshtml" />
+    <Content Include="Views\Home\AddEmployee.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
