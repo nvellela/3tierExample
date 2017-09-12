@@ -14,15 +14,15 @@ namespace WebApplication3Layers1ProjectExample.Controllers
     {
         private readonly IEmployeeService _employeeService;
 
-        //public HomeController(IEmployeeService employeeService)
-        //{
-        //    _employeeService = employeeService;
-        //}
-
-        public HomeController()
+        public HomeController(IEmployeeService employeeService)
         {
-            _employeeService = new EmployeeService();
+            _employeeService = employeeService;
         }
+
+        //public HomeController()
+        //{
+        //    _employeeService = new EmployeeService();
+        //}
 
         public ActionResult Index()
         {

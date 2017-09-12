@@ -13,6 +13,8 @@ namespace WebApplication3Layers1ProjectExample
     {
         protected void Application_Start()
         {
+            DependencyInjectionConfig.RegisterDependencies();
+
             AreaRegistration.RegisterAllAreas();
             GlobalConfiguration.Configure(WebApiConfig.Register);
             FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);
