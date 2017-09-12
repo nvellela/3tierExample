@@ -4,6 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 using WebApplication3Layers1ProjectExample.Application.BusinessLogicLayer.Interfaces;
+using WebApplication3Layers1ProjectExample.Application.BusinessLogicLayer.Models;
 using WebApplication3Layers1ProjectExample.Application.BusinessLogicLayer.Services;
 using WebApplication3Layers1ProjectExample.Models;
 
@@ -53,7 +54,7 @@ namespace WebApplication3Layers1ProjectExample.Controllers
 
                 vmEmployee.Id = item.Id;
                 vmEmployee.Name = item.Name;
-                vmEmployee.Salary = item.Salary.ToString();
+                vmEmployee.Salary = item.Salary; //.ToString();
                 vmEmployee.IsRetired = item.IsRetired;
 
                 if (item.Salary > 5)
@@ -82,7 +83,13 @@ namespace WebApplication3Layers1ProjectExample.Controllers
             if (ModelState.IsValid)
             {
                 //add to business layer
-                return RedirectToAction("Index");
+                var emplyeeBModel = new EmployeeModel();
+                emplyeeBModel.Name = model.Name;
+                emplyeeBModel.Salary = model.Salary;
+                emplyeeBModel.IsRetired = model.IsRetired;
+                _employeeService.Add(emplyeeBModel);
+
+                return RedirectToAction("EmployeeList");
             }
 
             return View(model);

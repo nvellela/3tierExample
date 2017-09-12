@@ -110,7 +110,14 @@ namespace WebApplication3Layers1ProjectExample.Application.DataAccessLayer.Servi
 
         public void AddEmployee(EmployeeModel model)
         {
-            throw new NotImplementedException();
+            var efModel = new Employee()
+            {
+                Name = model.Name,
+                Salary = model.Salary,
+                IsRetired = model.IsRetired
+            };
+            context.Employees.Add(efModel);
+            context.SaveChanges();
         }
     }
 

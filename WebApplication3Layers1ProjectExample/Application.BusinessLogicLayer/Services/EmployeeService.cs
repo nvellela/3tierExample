@@ -73,8 +73,7 @@ namespace WebApplication3Layers1ProjectExample.Application.BusinessLogicLayer.Se
         public void Add(EmployeeModel model)
         {
 
-            try
-            {
+          
                 //var checkResults = CheckForDuplicates(model);
                 //if (checkResults.Any())
                 //{
@@ -85,11 +84,7 @@ namespace WebApplication3Layers1ProjectExample.Application.BusinessLogicLayer.Se
                 _dataAccessService.AddEmployee(model);
 
                 //}
-            }
-            catch (Exception e)
-            {
-                //result.Errors.Add(e.BuildExceptionMessage());
-            }
+            
 
         }
 

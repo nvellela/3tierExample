@@ -19,7 +19,7 @@ namespace WebApplication3Layers1ProjectExample.Models
         [Required(ErrorMessage = "Required field")]
         [DisplayName("Annual Salary")]
         //[RegularExpression("([1-9][0-9]*)")] for 1-inf
-        public string Salary { get; set; }
+        public int Salary { get; set; }
 
         public bool IsRetired { get; set; }
         public string SalarySuper { get; set; }
