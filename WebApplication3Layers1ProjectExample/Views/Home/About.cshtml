@@ -5,3 +5,22 @@
 <h3>@ViewBag.Message</h3>
 
 <p>Use this area to provide additional information.</p>
+
+
+<select multiple id="e1" style="width:300px">
+    <option value="AL">Alabama</option>
+    <option value="Am">Amalapuram</option>
+    <option value="An">Anakapalli</option>
+    <option value="Ak">Akkayapalem</option>
+    <option value="WY">Wyoming</option>
+</select>
+@section scripts
+{
+    
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.4/css/select2.min.css" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.4/js/select2.min.js"></script>
+    <script type="text/javascript">
+       $('select').select2();
+    </script>
+
+}
